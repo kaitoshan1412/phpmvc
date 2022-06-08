@@ -1,4 +1,3 @@
-
 <!-- Boostrap JS -->
 <script src="<?= BASEURL; ?>/js/bootstrap.bundle.min.js"></script>
 <!-- Popper JS -->
@@ -8,4 +7,5 @@
 <!-- Vanilla JS -->
 <script src="<?= BASEURL; ?>/js/script.js"></script>
 </body>
+
 </html>

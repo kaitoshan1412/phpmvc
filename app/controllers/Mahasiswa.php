@@ -1,6 +1,7 @@
 <?php
 
-class Mahasiswa extends Controller {
+class Mahasiswa extends Controller
+{
     public function index()
     {
         $data['judul'] = 'Daftar Mahasiswa';
@@ -23,7 +24,7 @@ class Mahasiswa extends Controller {
 
     public function tambah()
     {
-        if ( $this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST) > 0 ) {
+        if ($this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST) > 0) {
             Flasher::setFlash('berhasil', 'ditambahkan', 'success');
             header('Location: ' . BASEURL . '/mahasiswa');
             exit;
@@ -36,7 +37,7 @@ class Mahasiswa extends Controller {
 
     public function hapus($id)
     {
-        if ( $this->model('Mahasiswa_model')->hapusDataMahasiswa($id) > 0 ) {
+        if ($this->model('Mahasiswa_model')->hapusDataMahasiswa($id) > 0) {
             Flasher::setFlash('berhasil', 'dihapus', 'success');
             header('Location: ' . BASEURL . '/mahasiswa');
             exit;
@@ -54,7 +55,7 @@ class Mahasiswa extends Controller {
 
     public function ubah()
     {
-        if ( $this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST) > 0 ) {
+        if ($this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST) > 0) {
             Flasher::setFlash('berhasil', 'diubah', 'success');
             header('Location: ' . BASEURL . '/mahasiswa');
             exit;

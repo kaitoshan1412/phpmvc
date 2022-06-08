@@ -1,4 +1,5 @@
-/* MVC = Model View Controller
+/*
+MVC = Model View Controller
 
 Pola arsitektur pada perancangan perangkat lunak berorientasi objek. Tujuannya agar memisahkan antara tampilan, data dan proses.
 
